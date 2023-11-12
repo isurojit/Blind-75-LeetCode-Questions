@@ -1,7 +1,9 @@
 /*Description:-
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+Given an array of integers nums and an integer target, return indices
+of the two numbers such that they add up to target.
 
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You may assume that each input would have exactly one solution,
+and you may not use the same element twice.
 
 You can return the answer in any order.
 
@@ -28,7 +30,8 @@ Constraints:
 Only one valid answer exists.
 
 
-Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+Follow-up: Can you come up with an algorithm that is less
+than O(n2) time complexity?
 */
 #include <iostream>
 #include <vector>
@@ -83,15 +86,27 @@ int main()
 /*
 Explanation:
 
-We use an unordered_map to store elements as keys and their corresponding indices as values. This allows us to quickly look up whether a complement is present in the array.
+-> We use an unordered_map to store elements as keys and their
+corresponding indices as values. This allows us to quickly look
+up whether a complement is present in the array.
 
-We iterate through the array using a for loop and calculate the complement of the current number by subtracting it from the target.
+-> We iterate through the array using a for loop and calculate
+the complement of the current number by subtracting it from the
+target.
 
-We check if the complement exists in the numMap by using the find method. If the complement is found, we add the indices to the result vector.
+-> We check if the complement exists in the numMap by using the
+find method. If the complement is found, we add the indices to
+the result vector.
 
-If the complement is not found, we add the current number and its index to the numMap for future reference.
+-> If the complement is not found, we add the current number and
+its index to the numMap for future reference.
 
-If no solution is found after iterating through the entire array, the result vector remains empty, indicating that there is no valid solution.
+-> If no solution is found after iterating through the entire
+array, the result vector remains empty, indicating that there
+is no valid solution.
 
-The time complexity of this solution is O(n), where n is the number of elements in the input vector. This algorithm is efficient for finding two numbers that sum up to the target, and the unordered_map data structure provides fast lookup.
+The time complexity of this solution is O(n), where n is the
+number of elements in the input vector. This algorithm is
+efficient for finding two numbers that sum up to the target,
+and the unordered_map data structure provides fast lookup.
 */

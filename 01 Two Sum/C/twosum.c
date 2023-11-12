@@ -1,7 +1,9 @@
 /*Description:-
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+Given an array of integers nums and an integer target, return indices
+of the two numbers such that they add up to target.
 
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You may assume that each input would have exactly one solution,
+and you may not use the same element twice.
 
 You can return the answer in any order.
 
@@ -28,7 +30,8 @@ Constraints:
 Only one valid answer exists.
 
 
-Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+Follow-up: Can you come up with an algorithm that is less
+than O(n2) time complexity?
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -95,17 +98,30 @@ int main()
 /*
 Explanation:
 
-We use dynamically allocated arrays in C to store the result indices and the indices of elements. The result array stores the final answer, while the numIndices array stores the indices of elements encountered so far.
+We use dynamically allocated arrays in C to store the result indices
+and the indices of elements. The result array stores the final
+answer, while the numIndices array stores the indices of elements
+encountered so far.
 
-We initialize the numIndices array with -1 values to indicate that no element has been encountered.
+We initialize the numIndices array with -1 values to indicate that
+no element has been encountered.
 
-We iterate through the array using a for loop and calculate the complement of the current number by subtracting it from the target.
+We iterate through the array using a for loop and calculate the
+complement of the current number by subtracting it from the target.
 
-We check if the complement exists in the numIndices array by checking if it's not equal to -1. If the complement is found, we assign the indices to the result array.
+We check if the complement exists in the numIndices array by checking
+if it's not equal to -1. If the complement is found, we assign the
+indices to the result array.
 
-If the complement is not found, we store the current index in the numIndices array for future reference.
+If the complement is not found, we store the current index in the
+numIndices array for future reference.
 
-If no solution is found after iterating through the entire array, the result array is empty, and the returnSize is set to 0.
+If no solution is found after iterating through the entire array,
+the result array is empty, and the returnSize is set to 0.
 
-This C solution has a time complexity of O(n), where n is the number of elements in the input array. It efficiently finds two numbers that sum up to the target using dynamically allocated arrays to manage memory. Don't forget to free the allocated memory to prevent memory leaks.
+This C solution has a time complexity of O(n), where n is the
+number of elements in the input array. It efficiently finds two
+numbers that sum up to the target using dynamically allocated
+arrays to manage memory. Don't forget to free the allocated memory
+to prevent memory leaks.
 */

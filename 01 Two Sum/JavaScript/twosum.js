@@ -1,7 +1,9 @@
 /*Description:-
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+Given an array of integers nums and an integer target, return indices
+of the two numbers such that they add up to target.
 
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You may assume that each input would have exactly one solution, 
+and you may not use the same element twice.
 
 You can return the answer in any order.
 
@@ -18,7 +20,7 @@ Example 3:
 
 Input: nums = [3,3], target = 6
 Output: [0,1]
- 
+
 
 Constraints:
 
@@ -26,9 +28,10 @@ Constraints:
 -109 <= nums[i] <= 109
 -109 <= target <= 109
 Only one valid answer exists.
- 
 
-Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+
+Follow-up: Can you come up with an algorithm that is less 
+than O(n2) time complexity?
 */
 
 function twoSum(nums, target) {
@@ -63,15 +66,26 @@ console.log(result); // Output: [0, 1]
 
 /*Explanation:
 
-We use an object (numMap) as a hash map to store the elements of the array as keys and their corresponding indices as values. This allows us to quickly look up whether a complement is present in the array.
+-> We use an object (numMap) as a hash map to store the elements of 
+the array as keys and their corresponding indices as values. 
+This allows us to quickly look up whether a complement is present 
+in the array.
 
-We iterate through the array using a for loop and calculate the complement of the current number by subtracting it from the target.
+-> We iterate through the array using a for loop and calculate the 
+complement of the current number by subtracting it from the target.
 
-We check if the complement exists in the numMap by using the hasOwnProperty method. If the complement is found, we return the indices of the two numbers.
+-> We check if the complement exists in the numMap by using the 
+hasOwnProperty method. If the complement is found, we return the 
+indices of the two numbers.
 
-If the complement is not found, we add the current number and its index to the numMap for future reference.
+-> If the complement is not found, we add the current number and 
+its index to the numMap for future reference.
 
-If no solution is found after iterating through the entire array, we return an empty array, indicating that there is no valid solution.
+-> If no solution is found after iterating through the entire 
+array, we return an empty array, indicating that there is no valid 
+solution.
 
-The time complexity of this solution is O(n) because we iterate through the array once, and the hash map operations (insertions, lookups) are typically O(1) on average.
+The time complexity of this solution is O(n) because we iterate 
+through the array once, and the hash map operations (insertions, 
+lookups) are typically O(1) on average.
 */
