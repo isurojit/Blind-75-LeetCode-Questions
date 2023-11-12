@@ -1,6 +1,8 @@
 /*
 Problem:-
-Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Given an integer array nums, return true if any value
+appears at least twice in the array, and return false if
+every element is distinct.
 
 Example 1:
 
@@ -22,7 +24,11 @@ Constraints:
 -109 <= nums[i] <= 109
 */
 /*Pre Explanation:-
-To solve the problem of determining whether any value appears at least twice in an integer array, you can use various data structures. One common approach is to use a HashSet to keep track of unique elements as you iterate through the array. If you encounter an element that is already in the HashSet, then you know there is a duplicate.
+To solve the problem of determining whether any value appears at least
+twice in an integer array, you can use various data structures.
+One common approach is to use a HashSet to keep track of unique elements as
+you iterate through the array. If you encounter an element that is already in the HashSet,
+then you know there is a duplicate.
 */
 #include <iostream>
 #include <unordered_set>
@@ -73,13 +79,20 @@ Explanation:-
 
 In this code:
 
--> containsDuplicate is a function that takes a vector of integers (nums) and returns a boolean indicating whether there are any duplicates.
+-> containsDuplicate is a function that takes a vector of integers
+(nums) and returns a boolean indicating whether there are any duplicates.
 
--> We use an unordered_set named uniqueElements to keep track of unique values encountered so far.
+-> We use an unordered_set named uniqueElements to keep track of unique
+values encountered so far.
 
--> We iterate through the array, and for each element, we check if it is already present in the uniqueElements set. If it is, we return true because we found a duplicate.
+-> We iterate through the array, and for each element, we check if it is
+already present in the uniqueElements set. If it is, we return true because
+we found a duplicate.
 
--> If no duplicates are found after iterating through the entire array, we return false.
+-> If no duplicates are found after iterating through the entire array,
+we return false.
 
-This solution has a time complexity of O(n), where n is the number of elements in the array, because it iterates through the array once, and the HashSet operations have average-case constant time complexity.
+This solution has a time complexity of O(n), where n is the number of
+elements in the array, because it iterates through the array once,
+and the HashSet operations have average-case constant time complexity.
 */
