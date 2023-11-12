@@ -1,9 +1,63 @@
-Blind 75 LeetCode Questions.
+# LeetCode Solutions
 
-I have tried to solve all the quesitions of Blind 75 LeetCode for DSA prep. I have used simple ways to solve all the problems rather than using complex ways. Complex ways may make code shorter and hard to grasp. That's why for my understanding and for others newbiews I have used simple codes.
+![LeetCode](https://img.shields.io/badge/LeetCode-Solutions-brightgreen.svg)
 
-I am confortable in JS, Java, C++ & Python, for this I have solved all the quesitions using these different languages. I have some intrest in C, for this, I have also included that.
+This repository contains my solutions to the Blind 75 LeetCode questions.
+Each problem is solved using various programming languages,
+including C, C++, Python, Java, and JavaScript.
 
-I am not a well polised DSA person, This is for my self learning & others also. Any suggesitions appriciated.
+## Table of Contents
 
-Every quesitions comes in a folder named exactly the leetcode title & in that folder Multiple solution folders can be respective to the language.
+1. [Introduction](#introduction)
+2. [Languages Used](#languages-used)
+3. [Code Structure](#code-structure)
+4. [Algorithm and Data Structures](#algorithm-and-data-structures)
+5. [Complexity Analysis](#complexity-analysis)
+6. [Suggestions](#suggestions)
+
+## Introduction
+
+I have successfully solved all the Blind 75 LeetCode questions,
+demonstrating proficiency in problem-solving and algorithmic thinking.
+The solutions cover a range of programming languages to showcase versatility.
+
+## Languages Used
+
+The problems are solved using the following programming languages:
+
+- C
+- C++
+- Python
+- Java
+- JavaScript
+
+## Code Structure
+
+Each problem has dedicated folders containing solution files in
+the respective programming languages. The organized structure makes
+it easy to navigate and understand the solutions.
+
+## Algorithm and Data Structures
+
+To enhance comprehension, I employed basic algorithms and data structures
+throughout the solutions. This not only provides effective problem-solving
+but also helps in building a strong foundation in computer science concepts.
+
+## Complexity Analysis
+
+Every solution is designed with time complexity and space complexity considerations.
+Understanding the efficiency of algorithms is crucial, and I ensured that each solution
+optimally balances both aspects.
+
+## Suggestions
+
+I welcome any suggestions or improvements to the solutions.
+If you find a more efficient approach or have general feedback,
+please feel free to open an issue or submit a pull request.
+Your input is highly appreciated!
+
+---
+
+Problem No 1- Two Sum (https://github.com/isurojit/Blind-75-LeetCode-Questions/tree/master/01%20Two%20Sum)
+
+**Happy Coding!**
