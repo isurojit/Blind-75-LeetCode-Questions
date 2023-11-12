@@ -58,6 +58,6 @@ Your input is highly appreciated!
 
 ---
 
-Problem No 1- Two Sum (https://github.com/isurojit/Blind-75-LeetCode-Questions/tree/master/01%20Two%20Sum)
+Problem No 1- Two Sum - "./01%20Two%20Sum"
 
 **Happy Coding!**
